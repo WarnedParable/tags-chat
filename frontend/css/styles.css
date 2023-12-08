@@ -1,0 +1,264 @@
+/* universal style area */
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    background: #f7f7f7;
+    width: 450px;
+    border-radius: 16px;
+    box-shadow: 0 0 1;
+}
+
+/* signup/login style area */
+
+.form {
+    padding: 25px 30px;
+}
+
+.form header {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.form form {
+    margin: 20px 0;
+}
+
+.form form .error {
+    color: #721c24;
+    background: #f8d7da;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px;
+}
+
+.form form .input-field{
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.form form .button input {
+    outline: none;
+    border: none;
+    height: 45px;
+    margin-top: 13px;
+    font-size: 17px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form .link {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+/* users list style area */
+
+.users {
+    padding: 25px 30px;
+}
+
+.users header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    border: 1px;
+}
+
+.users header .content {
+    display: flex;
+}
+
+.users header .details {
+    margin-left: 15px;
+}
+
+.users header .details span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.users header .logout {
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+.users .search {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+
+.users .search .text {
+    font-size: 18px;
+}
+
+.users .search input {
+    position: absolute;
+    height: 42px;
+    width: calc(100% - 50px);
+    border: 1px;
+    padding: 0 13px;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.users .search button {
+    width: 47px;
+    height: 42px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.users-list {
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+.users-list a {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    border: 1px;
+}
+
+.users-list a .details {
+    margin-left: 15px;
+    color: #000;
+}
+
+.users-list a .details p{
+    color: #67676a;
+}
+
+.users-list a .details span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* chat style area */
+
+.chat-area header {
+    display: flex;
+    align-items: center;
+    padding: 18px 30px;
+}
+
+.chat-area header .back-icon {
+    font-size: 20px;
+    color: #000;
+}
+
+.chat-area header .details {
+    margin: 0 15px;
+}
+
+.chat-area header span {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.chat-box {
+    height: 500px;
+    overflow-y: auto;
+    padding: 10px 30px 20px 30px; 
+}
+
+.chat-box .chat {
+    margin: 15px 0;
+}
+
+.chat-box .chat p {
+    word-wrap: break-word;
+    padding: 8px 16px;
+}
+
+.chat-box .outgoing {
+    display: flex;
+}
+
+.outgoing .details {
+    margin-left: auto;
+    max-width: calc(100% - 130px);
+}
+
+.outgoing .details p {
+    background: #000;
+    color: #fff;
+    border-radius: 18px 18px 0 18px;
+}
+
+.chat-box .incoming {
+    display: flex;
+    align-items: flex-end;
+}
+
+.incoming .details {
+    margin-left: 10px;
+    margin-right: auto;
+    max-width: calc(100% - 130px);
+}
+
+.incoming .details p {
+    background: #000;
+    color: #fff;
+    border-radius: 18px 18px 18px 0;
+}
+
+.chat-area .typing-area {
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.typing-area input {
+    height: 45px;
+    width: calc(100% - 58px);
+    font-size: 17px;
+    border: 1px solid #ccc;
+    padding: 0 13xp;
+    border-radius: 5px;
+    outline: none;
+}
+
+.typing-area button {
+    width: 55px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+    background: #000;
+    color: #fff;
+}
+
+.typing-area button:active {
+    background: #67676a;
+}
